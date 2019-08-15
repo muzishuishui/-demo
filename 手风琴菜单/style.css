@@ -1,0 +1,43 @@
+body,h3{
+    margin: 0;
+    padding: 0
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.content{
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+}
+.out_box{
+    width: 100%;
+    height: auto;
+}
+.out_box>h3{
+    background: #34495e;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    border-bottom: 1px solid #ecf0f1;
+    padding-left: 10px;
+}
+.out_box>.in_box{
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    /* display: none; */
+    /* 过度效果 */
+    transition-property: height;
+    transition-duration: 1s;
+}
+.out_box>.in_box>ul{
+    background: #95a5a6;
+    padding: 10px;
+}
+.out_box:hover>.in_box{
+    /* display: block; */
+    height: 80px;
+}
